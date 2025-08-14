@@ -1,0 +1,60 @@
+/* ===== Custom Theme Overrides ===== */
+
+/* Global font */
+.reveal {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Title slide styling */
+.reveal section:first-child h1 {
+  font-size: 3em;
+  color: #003366; /* Dark corporate blue */
+}
+
+.reveal section:first-child p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Lists */
+.reveal ul {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Code blocks */
+.reveal pre code {
+  font-size: 1.05em;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+/* Math equations */
+.reveal .mjx-chtml {
+  font-size: 1.2em;
+}
+
+/* Fragments animation styling */
+.fragment {
+  opacity: 0.3;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fragment.visible {
+  opacity: 1;
+}
+
+/* Footer */
+.reveal:after {
+  content: "Quarterly Earnings Report – Confidential";
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  font-size: 0.7em;
+  color: #888;
+}
+
+/* Responsive font scaling */
+:root {
+  --r-main-font-size: calc(0.8vw + 0.8vh + 0.6vmin);
+}
