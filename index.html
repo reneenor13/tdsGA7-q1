@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TDS GA7 - Question 1</title>
+  <title>TDS GA7 Q1 Presentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Reveal.js CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/black.css" id="theme">
-
-  <!-- Highlight.js for code syntax -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/monokai.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
 </head>
 <body>
   <div class="reveal">
@@ -18,76 +14,92 @@
 
       <!-- Slide 1: Title -->
       <section>
-        <h1>TDS GA7 - Question 1</h1>
-        <p>Author: Renee Noronha</p>
-        <p>Email: 23f3003731@ds.study.iitm.ac.in</p>
+        <h1>TDS GA7 Q1 Presentation</h1>
+        <h3>Renee Noronha</h3>
+        <p>Email: <strong>23f3003731@ds.study.iitm.ac.in</strong></p>
+        <aside class="notes">
+          Welcome the audience and introduce yourself. Mention your email for contact.
+        </aside>
       </section>
 
-      <!-- Slide 2: Markdown slide -->
+      <!-- Slide 2: Markdown Example -->
       <section data-markdown>
         <textarea data-template>
-## Markdown Example Slide
+## Markdown Slide Example
 
-- This is a **Markdown** slide
-- Supports **lists**, **bold**, *italics*, and more
-- Each item can appear as a fragment
+- This is a **bullet point**  
+- Use *italics* and **bold**  
+- Animated points below:
 
-- Item 1
-- Item 2
-- Item 3
+- Step 1 <span class="fragment">[Fragment 1]</span>
+- Step 2 <span class="fragment">[Fragment 2]</span>
+- Step 3 <span class="fragment">[Fragment 3]</span>
         </textarea>
+        <aside class="notes">
+          Explain Markdown formatting and fragments for step-by-step animation.
+        </aside>
       </section>
 
-      <!-- Slide 3: Animated fragments -->
+      <!-- Slide 3: Code Sample -->
       <section>
-        <h2>Animated Fragments</h2>
-        <p class="fragment fade-in">First point</p>
-        <p class="fragment fade-in">Second point</p>
-        <p class="fragment fade-in">Third point</p>
-      </section>
+        <h2>Python Code Example</h2>
+        <pre><code class="python">
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a)
+        a, b = b, a + b
 
-      <!-- Slide 4: Code sample -->
-      <section>
-        <h2>Code Example (Python)</h2>
-        <pre><code class="language-python">
-def greet(name):
-    print(f"Hello, {name}!")
-
-greet("Renee")
+fibonacci(5)
         </code></pre>
+        <aside class="notes">
+          Explain the Fibonacci function and syntax highlighting.
+        </aside>
       </section>
 
-      <!-- Slide 5: Math equation -->
+      <!-- Slide 4: Mathematical Formula -->
       <section>
-        <h2>Financial Formula</h2>
-        <p>Future Value (FV) formula:</p>
-        <p>\( FV = PV \times (1 + r)^n \)</p>
+        <h2>Financial Formula Example</h2>
+        <p>Present Value (PV) formula:</p>
+        <p>$$PV = \frac{FV}{(1+r)^n}$$</p>
+        <aside class="notes">
+          Explain how Present Value is calculated using interest rate r and periods n.
+        </aside>
       </section>
 
-      <!-- Slide 6: Speaker notes -->
-      <section data-state="notes">
-        <h2>Speaker Notes</h2>
-        <p>Introduce yourself and your email.</p>
-        <p>Explain the Markdown slide and demonstrate fragments.</p>
-        <p>Show the code example and briefly run it if possible.</p>
-        <p>Explain the financial formula using a simple example.</p>
+      <!-- Slide 5: Fragments Demo -->
+      <section>
+        <h2>Fragment Animation Example</h2>
+        <p class="fragment">Point 1 appears first</p>
+        <p class="fragment">Point 2 appears second</p>
+        <p class="fragment">Point 3 appears last</p>
+        <aside class="notes">
+          Show the audience how each point appears step by step using fragments.
+        </aside>
+      </section>
+
+      <!-- Slide 6: Conclusion -->
+      <section>
+        <h2>Conclusion</h2>
+        <p>Thank you for watching!</p>
+        <p>Contact me: <strong>23f3003731@ds.study.iitm.ac.in</strong></p>
+        <aside class="notes">
+          Wrap up the presentation and remind the audience of your contact email.
+        </aside>
       </section>
 
     </div>
   </div>
 
-  <!-- Reveal.js JS -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/markdown/markdown.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/math/math.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
       plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
     });
   </script>
-
 </body>
 </html>
