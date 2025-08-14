@@ -1,123 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Quarterly Earnings Report</title>
-  <!-- RevealJS core CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-  <!-- Theme: White (required by assignment) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme">
-  <!-- Syntax highlighting -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/plugin/highlight/monokai.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="custom.css">
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
 
-      <!-- Slide 1: Title -->
-      <section>
-        <h1>Quarterly Earnings Report</h1>
-        <p>Presented by Renee Noronha</p>
-        <p>Email: <strong>23f3003731@ds.study.iitm.ac.in</strong></p>
-        <aside class="notes">
-          Welcome the stakeholders, introduce yourself, and state the purpose of the report.
-        </aside>
-      </section>
+    <!-- RevealJS Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
 
-      <!-- Slide 2: Markdown Slide -->
-      <section data-markdown>
-        <textarea data-template>
-## Key Highlights
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- Slide 1: Title -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Presented by Renee Noronha</p>
+          <p>Email: 23f3003731@ds.study.iitm.ac.in</p>
+        </section>
 
-- Revenue increased by **12%** compared to last quarter
-- Operating costs reduced by **8%**
-- Net profit margin improved
+        <!-- Slide 2: Markdown Example -->
+        <section data-markdown>
+          <textarea data-template>
+## Company Performance (Markdown Slide)
+
+- Revenue: **$5.2M**
+- Growth: **12%**
+- Profit Margin: **18%**
 
 ---
+### Highlights
+- Expanded to 3 new markets
+- Launched mobile app
+          </textarea>
+        </section>
 
-## Next Steps
+        <!-- Slide 3: Key Drivers with Fragments and Notes -->
+        <section>
+          <h2>Key Drivers</h2>
+          <ul>
+            <li class="fragment">Increased sales in Asia</li>
+            <li class="fragment">Reduced operating costs</li>
+            <li class="fragment fade-up">Improved customer retention</li>
+          </ul>
+          <aside class="notes">
+            Mention how expansion and cost reduction affected overall revenue growth.
+          </aside>
+        </section>
 
-- Expand digital marketing campaigns
-- Optimize supply chain
-- Evaluate new investment opportunities
-        </textarea>
-      </section>
-
-      <!-- Slide 3: Fragments -->
-      <section>
-        <h2>Important Metrics</h2>
-        <ul>
-          <li class="fragment">Customer Growth: 18%</li>
-          <li class="fragment fade-up">Churn Rate: 4%</li>
-          <li class="fragment">New Partnerships: 3 signed</li>
-        </ul>
-        <aside class="notes">
-          Introduce each metric slowly, pausing for audience emphasis.
-        </aside>
-      </section>
-
-      <!-- Slide 4: Code Sample -->
-      <section>
-        <h2>Revenue Analysis Code</h2>
-        <pre><code class="python" data-line-numbers="1-2|4-5">
+        <!-- Slide 4: Code Sample -->
+        <section>
+          <h2>Data Analysis Code</h2>
+          <pre><code class="python">
 import pandas as pd
 
 # Load quarterly data
-data = pd.read_csv('quarterly_revenue.csv')
+df = pd.read_csv("earnings.csv")
 
-# Calculate profit margin
-data['profit_margin'] = data['net_profit'] / data['revenue'] * 100
-print(data.head())
-        </code></pre>
-        <aside class="notes">
-          Show how we calculate profit margins from revenue data using Python.
-        </aside>
-      </section>
+# Calculate growth
+growth = (df['Q4'] - df['Q3']) / df['Q3'] * 100
+print(f"Growth: {growth:.2f}%")
+          </code></pre>
+          <aside class="notes">
+            Explain how we calculate quarterly growth using Python.
+          </aside>
+        </section>
 
-      <!-- Slide 5: Math Formula -->
-      <section>
-        <h2>Financial Formula</h2>
-        <p>Net Profit Margin:</p>
-        \[ \text{Net Profit Margin (\%)} = \frac{\text{Net Profit}}{\text{Revenue}} \times 100 \]
-        <aside class="notes">
-          Explain how net profit margin is derived and why it's important for stakeholders.
-        </aside>
-      </section>
+        <!-- Slide 5: Math Equation -->
+        <section>
+          <h2>Return on Investment</h2>
+          <p>
+            \[
+            ROI = \frac{\text{Net Profit}}{\text{Cost of Investment}} \times 100
+            \]
+          </p>
+          <aside class="notes">
+            Discuss ROI calculation and its importance for strategic decisions.
+          </aside>
+        </section>
 
-      <!-- Slide 6: Closing Slide -->
-      <section>
-        <h2>Thank You!</h2>
-        <p>Questions and Discussion</p>
-        <aside class="notes">
-          Invite questions and provide your email again for follow-up.
-        </aside>
-      </section>
+        <!-- Slide 6: Conclusion -->
+        <section>
+          <h2>Conclusion</h2>
+          <p>Overall, a strong quarter with room for strategic investments.</p>
+          <aside class="notes">
+            Highlight positive impact of Asia expansion and tech investments.
+          </aside>
+        </section>
 
+      </div>
     </div>
-  </div>
 
-  <!-- RevealJS core JS -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-  <!-- Plugins -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/plugin/markdown/markdown.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/plugin/notes/notes.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/plugin/math/math.js"></script>
+    <!-- RevealJS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-  <script>
-    Reveal.initialize({
-      width: 1280,
-      height: 720,
-      margin: 0.04,
-      controls: true,
-      progress: true,
-      history: true,
-      autoSlide: 0,
-      transition: 'slide',
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-    });
-  </script>
-</body>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: "slide",
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+      });
+    </script>
+  </body>
 </html>
