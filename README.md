@@ -13,7 +13,7 @@ The presentation is designed for stakeholders and demonstrates **modern presenta
 ---
 
 ## 📌 Live Presentation
-**URL:** [View on GitHub Pages](https://YOUR-USERNAME.github.io/quarterly-earnings-presentation/?v=1)  
+**URL:** [View on GitHub Pages](https://reneenor13.github.io/tdsGA7-q1/#/)  
 
 ---
 
