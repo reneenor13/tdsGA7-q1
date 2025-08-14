@@ -1,106 +1,93 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Quarterly Earnings Report</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TDS GA7 - Question 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- RevealJS core styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/black.css" id="theme">
 
-    <!-- Syntax highlighting theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+  <!-- Highlight.js for code syntax -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/monokai.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
 
-    <!-- Custom CSS (optional) -->
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
+      <!-- Slide 1: Title -->
+      <section>
+        <h1>TDS GA7 - Question 1</h1>
+        <p>Author: Renee Noronha</p>
+        <p>Email: 23f3003731@ds.study.iitm.ac.in</p>
+      </section>
 
-        <!-- Slide 1: Title -->
-        <section>
-          <h1>Quarterly Earnings Report</h1>
-          <p>Email: 23f3003731@ds.study.iitm.ac.in</p>
-        </section>
+      <!-- Slide 2: Markdown slide -->
+      <section data-markdown>
+        <textarea data-template>
+## Markdown Example Slide
 
-        <!-- Slide 2: Markdown example -->
-        <section data-markdown>
-          <textarea data-template>
-            ## Company Performance (Markdown Slide)
+- This is a **Markdown** slide
+- Supports **lists**, **bold**, *italics*, and more
+- Each item can appear as a fragment
 
-            - Revenue: **$5.2M**
-            - Growth: **12%**
-            - Profit Margin: **18%**
+- Item 1
+- Item 2
+- Item 3
+        </textarea>
+      </section>
 
-            ---
-            ### Highlights
-            - Expanded to 3 new markets
-            - Launched mobile app
-          </textarea>
-        </section>
+      <!-- Slide 3: Animated fragments -->
+      <section>
+        <h2>Animated Fragments</h2>
+        <p class="fragment fade-in">First point</p>
+        <p class="fragment fade-in">Second point</p>
+        <p class="fragment fade-in">Third point</p>
+      </section>
 
-        <!-- Slide 3: Animated fragments -->
-        <section>
-          <h2>Key Drivers</h2>
-          <ul>
-            <li class="fragment">Increased sales in Asia</li>
-            <li class="fragment">Reduced operating costs</li>
-            <li class="fragment fade-up">Improved customer retention</li>
-          </ul>
-        </section>
+      <!-- Slide 4: Code sample -->
+      <section>
+        <h2>Code Example (Python)</h2>
+        <pre><code class="language-python">
+def greet(name):
+    print(f"Hello, {name}!")
 
-        <!-- Slide 4: Code sample with syntax highlighting -->
-        <section>
-          <h2>Data Analysis Code</h2>
-          <pre><code class="python" data-line-numbers="1-3|5-6">
-import pandas as pd
+greet("Renee")
+        </code></pre>
+      </section>
 
-# Load quarterly data
-df = pd.read_csv("earnings.csv")
+      <!-- Slide 5: Math equation -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>Future Value (FV) formula:</p>
+        <p>\( FV = PV \times (1 + r)^n \)</p>
+      </section>
 
-# Calculate growth
-growth = (df['Q4'] - df['Q3']) / df['Q3'] * 100
-print(f"Growth: {growth:.2f}%")
-          </code></pre>
-        </section>
+      <!-- Slide 6: Speaker notes -->
+      <section data-state="notes">
+        <h2>Speaker Notes</h2>
+        <p>Introduce yourself and your email.</p>
+        <p>Explain the Markdown slide and demonstrate fragments.</p>
+        <p>Show the code example and briefly run it if possible.</p>
+        <p>Explain the financial formula using a simple example.</p>
+      </section>
 
-        <!-- Slide 5: Math equation -->
-        <section>
-          <h2>Return on Investment</h2>
-          \[
-          ROI = \frac{\text{Net Profit}}{\text{Cost of Investment}} \times 100
-          \]
-        </section>
-
-        <!-- Slide 6: Conclusion with speaker notes -->
-        <section>
-          <h2>Conclusion</h2>
-          <p>Overall, a strong quarter with room for strategic investments.</p>
-          <aside class="notes">
-            Mention positive impact of Asia expansion, reduced costs, and ROI improvement.
-          </aside>
-        </section>
-
-      </div>
     </div>
+  </div>
 
-    <!-- RevealJS scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+  <!-- Reveal.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/math/math.js"></script>
 
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        transition: "slide",
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
-      });
-    </script>
-  </body>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+    });
+  </script>
+
+</body>
 </html>
