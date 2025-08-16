@@ -1,145 +1,201 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Quarterly Earnings Report</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Reveal.js -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
-
-  <style>
-    footer {
-      position: absolute;
-      bottom: 10px;
-      right: 20px;
-      font-size: 0.7em;
-      color: #ccc;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2024 Earnings Report</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <!-- MathJax for equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <div class="reveal">
-    <div class="slides">
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p>
+                    <small>Prepared by Financial Analytics Team</small><br>
+                    <small>Contact: <a href="mailto:23f3003731@ds.study.iitm.ac.in">23f3003731@ds.study.iitm.ac.in</a></small>
+                </p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 2024 earnings presentation. Today we'll cover our financial performance, key metrics, and strategic outlook for 2025.
+                </aside>
+            </section>
 
-      <!-- Title Slide -->
-      <section>
-        <h1>Quarterly Earnings Report</h1>
-        <p>By Renee Noronha</p>
-        <p>Email: <strong>23f3003731@ds.study.iitm.ac.in</strong></p>
-        <aside class="notes">
-          Introduce yourself and mention the agenda of the report.
-        </aside>
-      </section>
+            <!-- Executive Summary -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
 
-      <!-- Markdown Slide -->
-      <section data-markdown>
-        <textarea data-template>
-### Executive Summary
-- Revenue growth: **12% YoY**
-- Net income: **£5.2M**
-- Key drivers: Strong online sales & new product launches
-        </textarea>
-        <aside class="notes">
-          Summarise the main highlights here.
-        </aside>
-      </section>
+                    ### Key Highlights
+                    - **Revenue Growth**: 12.5% year-over-year
+                    - **Net Income**: $2.8B (+8.3% YoY)
+                    - **Return on Equity**: 15.2%
+                    - **Digital Transformation**: 85% completion
 
-      <!-- Fragments Slide -->
-      <section>
-        <h2>Financial Metrics</h2>
-        <p class="fragment">Revenue: £42M</p>
-        <p class="fragment">Expenses: £36.8M</p>
-        <p class="fragment">Net Profit: £5.2M</p>
-        <aside class="notes">
-          Reveal metrics one by one for emphasis.
-        </aside>
-      </section>
+                    ---
 
-      <!-- Code Highlighting -->
-      <section>
-        <h2>Data Analysis (Python)</h2>
-        <pre><code class="python">
+                    ## Market Performance
+                    
+                    Our strategic initiatives have delivered strong results:
+                    
+                    * Enhanced digital banking platform
+                    * Expanded corporate lending portfolio
+                    * Improved operational efficiency by 18%
+                </textarea>
+                <aside class="notes">
+                    This slide shows our key performance indicators. Note the strong revenue growth and successful digital transformation progress.
+                </aside>
+            </section>
+
+            <!-- Financial Metrics with Animations -->
+            <section>
+                <h2>Financial Performance</h2>
+                <div class="metrics-container">
+                    <div class="metric fragment fade-up">
+                        <h3>$15.2B</h3>
+                        <p>Total Revenue</p>
+                    </div>
+                    <div class="metric fragment fade-up" data-fragment-index="1">
+                        <h3>$2.8B</h3>
+                        <p>Net Income</p>
+                    </div>
+                    <div class="metric fragment fade-up" data-fragment-index="2">
+                        <h3>15.2%</h3>
+                        <p>Return on Equity</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Walk through each metric as it appears. Emphasize the strong ROE performance compared to industry average of 12%.
+                </aside>
+            </section>
+
+            <!-- Code Sample for Risk Analysis -->
+            <section>
+                <h2>Risk Analysis Algorithm</h2>
+                <pre><code class="python" data-line-numbers="1-3|5-8|10-12">
+# Portfolio Risk Assessment Model
+import numpy as np
 import pandas as pd
 
-df = pd.read_csv("earnings.csv")
-summary = df.groupby("quarter").sum()
-print(summary)
-        </code></pre>
-        <aside class="notes">
-          Show an example of analysis workflow.
-        </aside>
-      </section>
+def calculate_var(returns, confidence_level=0.95):
+    """Calculate Value at Risk for portfolio"""
+    sorted_returns = np.sort(returns)
+    index = int((1 - confidence_level) * len(sorted_returns))
+    
+    var = sorted_returns[index]
+    return abs(var)
 
-      <!-- Math Equations -->
-      <section>
-        <h2>Financial Ratios</h2>
-        <p>Return on Equity (ROE):</p>
-        <p>\[
-        ROE = \frac{Net\ Income}{Shareholder's\ Equity}
-        \]</p>
-        <p>Capital Adequacy Ratio (CAR):</p>
-        <p>\[
-        CAR = \frac{Tier\ 1 + Tier\ 2\ Capital}{Risk-Weighted\ Assets}
-        \]</p>
-        <aside class="notes">
-          Highlight the importance of ratios.
-        </aside>
-      </section>
+# Example implementation
+portfolio_returns = load_portfolio_data()
+risk_threshold = calculate_var(portfolio_returns, 0.99)
+print(f"99% VaR: ${risk_threshold:,.2f}")
+                </code></pre>
+                <aside class="notes">
+                    This shows our enhanced risk management system. The highlighted lines show the core VaR calculation we use for regulatory reporting.
+                </aside>
+            </section>
 
-      <!-- Fragments Animation -->
-      <section>
-        <h2>Outlook</h2>
-        <ul>
-          <li class="fragment">Expansion into new markets</li>
-          <li class="fragment">Increased R&D investments</li>
-          <li class="fragment">Forecast: 15% growth next quarter</li>
-        </ul>
-        <aside class="notes">
-          Build anticipation for positive outlook.
-        </aside>
-      </section>
+            <!-- Mathematical Formula -->
+            <section>
+                <h2>Capital Adequacy Ratio</h2>
+                <div class="formula-section">
+                    <p>Our regulatory capital calculation follows Basel III requirements:</p>
+                    
+                    <div class="math-container">
+                        $$CAR = \frac{T_1 + T_2}{RWA} \times 100\%$$
+                    </div>
+                    
+                    <div class="fragment fade-in">
+                        <h3>Current Performance</h3>
+                        $$CAR = \frac{12.8B + 3.2B}{89.5B} \times 100\% = 17.9\%$$
+                    </div>
+                    
+                    <p class="fragment">Well above regulatory minimum of 10.5%</p>
+                </div>
+                <aside class="notes">
+                    Our CAR of 17.9% demonstrates strong capital position. Tier 1 is $12.8B, Tier 2 is $3.2B, against risk-weighted assets of $89.5B.
+                </aside>
+            </section>
 
-      <!-- Dedicated Contact Slide -->
-      <section>
-        <h2>Contact</h2>
-        <p><strong>23f3003731@ds.study.iitm.ac.in</strong></p>
-        <aside class="notes">
-          Provide contact details for follow-up.
-        </aside>
-      </section>
+            <!-- Animated Chart Placeholder -->
+            <section>
+                <h2>Revenue Trend Analysis</h2>
+                <div class="chart-container">
+                    <div class="chart-placeholder fragment fade-in">
+                        <div class="bar fragment" data-fragment-index="1" style="height: 60%;">Q1</div>
+                        <div class="bar fragment" data-fragment-index="2" style="height: 75%;">Q2</div>
+                        <div class="bar fragment" data-fragment-index="3" style="height: 85%;">Q3</div>
+                        <div class="bar fragment" data-fragment-index="4" style="height: 95%;">Q4</div>
+                    </div>
+                    <p class="fragment" data-fragment-index="5">Consistent quarterly growth throughout 2024</p>
+                </div>
+                <aside class="notes">
+                    Show the progressive revenue growth each quarter. Q4 shows 15% growth over Q3, driven by increased lending and fee income.
+                </aside>
+            </section>
 
-      <!-- Q&A Slide -->
-      <section>
-        <h2>Q&amp;A</h2>
-        <p>Thank you for your attention.</p>
-        <p>Email: 23f3003731@ds.study.iitm.ac.in</p>
-        <aside class="notes">
-          Invite questions and discussions.
-        </aside>
-      </section>
+            <!-- Strategic Outlook -->
+            <section>
+                <h2>2025 Strategic Priorities</h2>
+                <ul>
+                    <li class="fragment highlight-blue">Digital Banking Expansion</li>
+                    <li class="fragment highlight-green">ESG Investment Portfolio</li>
+                    <li class="fragment highlight-red">AI-Driven Risk Management</li>
+                    <li class="fragment fade-up">International Market Entry</li>
+                </ul>
+                <aside class="notes">
+                    These four pillars will drive our 2025 strategy. Digital banking targets 2M new customers. ESG portfolio aims for $5B in sustainable investments.
+                </aside>
+            </section>
 
+            <!-- Contact Information -->
+            <section>
+                <h1>Thank You</h1>
+                <h3>Questions & Discussion</h3>
+                <div class="contact-info">
+                    <p>For detailed financial reports and analysis:</p>
+                    <p><strong>Email:</strong> <a href="mailto:23f3003731@ds.study.iitm.ac.in">23f3003731@ds.study.iitm.ac.in</a></p>
+                    <p><strong>Investor Relations:</strong> ir@company.com</p>
+                </div>
+                <aside class="notes">
+                    Open floor for questions. Be prepared to discuss regulatory changes, market conditions, and our competitive positioning.
+                </aside>
+            </section>
+        </div>
     </div>
-  </div>
 
-  <footer>
-    Contact: 23f3003731@ds.study.iitm.ac.in
-  </footer>
+    <!-- RevealJS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
 
-  <!-- Reveal.js Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
-
-  <script>
-    Reveal.initialize({
-      hash: true,
-      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
-    });
-  </script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide',
+            
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMath.MathJax3
+            ]
+        });
+    </script>
 </body>
 </html>
