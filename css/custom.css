@@ -1,30 +1,250 @@
-/* Custom font for presentation */
+/* Custom styling for quarterly earnings presentation */
+
+/* Global theme customization */
 .reveal {
-  font-family: "Arial", sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
 }
 
-/* Darker headings for clarity */
-.reveal h1, .reveal h2 {
-  color: #222;
+.reveal h1, .reveal h2, .reveal h3 {
+    color: #34495e;
+    font-weight: 600;
 }
 
-/* Slide background for emphasis */
-.reveal section {
-  padding: 30px;
+.reveal h1 {
+    font-size: 2.5em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Code blocks styling */
-.reveal pre code {
-  font-size: 0.9em;
-  line-height: 1.3em;
+/* Metrics container styling */
+.metrics-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    flex-wrap: wrap;
 }
 
-/* Fragments animation tweaks */
-.reveal .fragment {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.metric {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    min-width: 200px;
+    margin: 0.5rem;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease;
 }
 
-.reveal .fragment.visible {
-  opacity: 1;
+.metric.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.metric h3 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.metric p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Mathematical formulas styling */
+.formula-section {
+    padding: 2rem;
+}
+
+.math-container {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    font-size: 1.4em;
+}
+
+/* Code styling enhancements */
+.reveal pre {
+    width: 100%;
+    font-size: 0.8em;
+    line-height: 1.4;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.reveal code {
+    max-height: 500px;
+    padding: 1.5rem;
+}
+
+/* Chart placeholder styling */
+.chart-container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-placeholder {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(to top, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bar {
+    width: 80px;
+    background: linear-gradient(to top, #3498db, #2980b9);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+    transition: all 0.6s ease;
+    opacity: 0.8;
+}
+
+.bar:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Contact information styling */
+.contact-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: #f39c12;
+}
+
+/* Fragment animations */
+.reveal .slides section .fragment.highlight-blue {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.reveal .slides section .fragment.highlight-green {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.reveal .slides section .fragment.highlight-red {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .metrics-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .metric {
+        min-width: 280px;
+        margin: 1rem 0;
+    }
+    
+    .chart-placeholder {
+        width: 90%;
+    }
+    
+    .bar {
+        width: 60px;
+    }
+    
+    .reveal h1 {
+        font-size: 2em;
+    }
+    
+    .math-container {
+        font-size: 1.1em;
+        padding: 1rem;
+    }
+}
+
+/* Speaker notes styling */
+.reveal aside.notes {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Progress bar customization */
+.reveal .progress {
+    color: #667eea;
+}
+
+/* Controls customization */
+.reveal .controls {
+    color: #667eea;
+}
+
+/* Slide number styling */
+.reveal .slide-number {
+    background-color: #667eea;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Title slide specific styling */
+.reveal .slides > section:first-child {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 3rem;
+}
+
+.reveal .slides > section:first-child h1,
+.reveal .slides > section:first-child h3 {
+    color: white;
+}
+
+/* Smooth transitions */
+.reveal .slides section {
+    transition: all 0.6s ease;
+}
+
+/* Print styles */
+@media print {
+    .reveal {
+        background: white !important;
+    }
+    
+    .metric {
+        background: #f8f9fa !important;
+        color: #2c3e50 !important;
+        border: 2px solid #dee2e6;
+    }
+    
+    .metric h3 {
+        color: #2c3e50 !important;
+    }
 }
