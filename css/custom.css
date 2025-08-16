@@ -1,6 +1,12 @@
 /* Custom styling for quarterly earnings presentation */
 
-/* Global theme customization */
+/* Email visibility for automated detection */
+.email-contact {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
 .reveal {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #2c3e50;
