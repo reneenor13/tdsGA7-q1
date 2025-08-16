@@ -1,434 +1,145 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q4 Quarterly Earnings Report</title>
-    
-    <!-- RevealJS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
-    
-    <!-- MathJax for equations -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Custom styles -->
-    <style>
-        .reveal {
-            font-family: "Arial", sans-serif;
-        }
-        
-        .reveal .slides section {
-            text-align: left;
-        }
-        
-        .reveal .slides section.center {
-            text-align: center;
-        }
-        
-        .financial-metric {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            display: inline-block;
-            min-width: 200px;
-        }
-        
-        .metric-value {
-            font-size: 2em;
-            font-weight: bold;
-        }
-        
-        .metric-label {
-            font-size: 0.8em;
-            opacity: 0.9;
-        }
-        
-        .chart-container {
-            height: 400px;
-            margin: 20px auto;
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 20px;
-        }
-        
-        .contact-info {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            font-size: 0.7em;
-            color: #666;
-        }
-        
-        .highlight-box {
-            background: #e3f2fd;
-            border-left: 4px solid #2196f3;
-            padding: 15px;
-            margin: 15px 0;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+
+  <style>
+    footer {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 0.7em;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <!-- Title Slide -->
-            <section class="center" data-background-gradient="linear-gradient(45deg, #1e3c72, #2a5298)">
-                <h1 style="color: white;">Q4 2024 Quarterly Earnings Report</h1>
-                <h3 style="color: #e3f2fd;">Financial Performance & Strategic Outlook</h3>
-                <p style="color: #bbdefb; margin-top: 50px;">
-                    Prepared by: Technical Consulting Team<br>
-                    <strong style="font-size: 1.2em; color: #ffffff;">23f3003731@ds.study.iitm.ac.in</strong>
-                </p>
-                <p style="color: #90caf9; font-size: 0.8em; margin-top: 30px;">
-                    Use arrow keys to navigate • Press 'S' for speaker notes • Press 'F' for fullscreen
-                </p>
-                
-                <aside class="notes">
-                    Welcome to our Q4 2024 earnings presentation. This interactive presentation will cover our financial performance, key metrics, and strategic outlook. Remember to highlight the strong revenue growth and our technology investments.
-                </aside>
-            </section>
+  <div class="reveal">
+    <div class="slides">
 
-            <!-- Executive Summary in Markdown -->
-            <section data-markdown>
-                <textarea data-template>
-                    ## Executive Summary
-                    
-                    Our Q4 2024 performance demonstrates **strong operational excellence** and strategic execution:
-                    
-                    - **Revenue Growth**: 15.3% year-over-year increase
-                    - **Digital Transformation**: 40% increase in digital transactions
-                    - **Cost Efficiency**: 8% reduction in operational costs
-                    - **Market Expansion**: Entered 3 new geographic markets
-                    
-                    ---
-                    
-                    ### Strategic Priorities for 2025
-                    
-                    1. **Technology Innovation**: AI-driven analytics platform
-                    2. **Customer Experience**: Enhanced digital banking services
-                    3. **Risk Management**: Advanced fraud detection systems
-                    4. **Sustainable Finance**: ESG-compliant investment products
-                </textarea>
-                
-                <aside class="notes">
-                    This slide provides a high-level overview of our Q4 performance. Emphasize the strong revenue growth and our successful digital transformation initiatives. The strategic priorities for 2025 show our commitment to innovation and customer service.
-                </aside>
-            </section>
+      <!-- Title Slide -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>By Renee Noronha</p>
+        <p>Email: <strong>23f3003731@ds.study.iitm.ac.in</strong></p>
+        <aside class="notes">
+          Introduce yourself and mention the agenda of the report.
+        </aside>
+      </section>
 
-            <!-- Financial Metrics with Fragments -->
-            <section class="center">
-                <h2>Key Financial Metrics</h2>
-                
-                <div class="fragment fade-up">
-                    <div class="financial-metric">
-                        <div class="metric-value">$2.4B</div>
-                        <div class="metric-label">Total Revenue</div>
-                    </div>
-                </div>
-                
-                <div class="fragment fade-up" data-fragment-index="1">
-                    <div class="financial-metric">
-                        <div class="metric-value">$485M</div>
-                        <div class="metric-label">Net Income</div>
-                    </div>
-                </div>
-                
-                <div class="fragment fade-up" data-fragment-index="2">
-                    <div class="financial-metric">
-                        <div class="metric-value">18.2%</div>
-                        <div class="metric-label">ROE</div>
-                    </div>
-                </div>
-                
-                <div class="fragment fade-up" data-fragment-index="3">
-                    <div class="financial-metric">
-                        <div class="metric-value">1.15%</div>
-                        <div class="metric-label">ROA</div>
-                    </div>
-                </div>
-                
-                <p class="fragment" data-fragment-index="4" style="margin-top: 30px; font-size: 0.9em; color: #666;">
-                    All metrics show significant improvement compared to Q3 2024
-                </p>
-                
-                <aside class="notes">
-                    Present each metric one by one, allowing time for the audience to absorb the information. Highlight that all metrics exceeded analyst expectations and show strong growth compared to the previous quarter.
-                </aside>
-            </section>
+      <!-- Markdown Slide -->
+      <section data-markdown>
+        <textarea data-template>
+### Executive Summary
+- Revenue growth: **12% YoY**
+- Net income: **£5.2M**
+- Key drivers: Strong online sales & new product launches
+        </textarea>
+        <aside class="notes">
+          Summarise the main highlights here.
+        </aside>
+      </section>
 
-            <!-- Code Sample: Risk Calculation Algorithm -->
-            <section>
-                <h2>Risk Assessment Algorithm</h2>
-                <p>Our proprietary risk calculation engine:</p>
-                
-                <pre><code class="python" data-line-numbers="1-3|5-8|10-15|17-20">
-import numpy as np
+      <!-- Fragments Slide -->
+      <section>
+        <h2>Financial Metrics</h2>
+        <p class="fragment">Revenue: £42M</p>
+        <p class="fragment">Expenses: £36.8M</p>
+        <p class="fragment">Net Profit: £5.2M</p>
+        <aside class="notes">
+          Reveal metrics one by one for emphasis.
+        </aside>
+      </section>
+
+      <!-- Code Highlighting -->
+      <section>
+        <h2>Data Analysis (Python)</h2>
+        <pre><code class="python">
 import pandas as pd
-from sklearn.ensemble import RandomForestRegressor
 
-# Portfolio risk calculation
-def calculate_portfolio_risk(assets, weights, correlation_matrix):
-    """Calculate Value at Risk (VaR) for portfolio"""
-    portfolio_variance = np.dot(weights.T, np.dot(correlation_matrix, weights))
-    
-    # Monte Carlo simulation for stress testing
-    simulations = 10000
-    random_returns = np.random.multivariate_normal(
-        mean=assets['expected_return'], 
-        cov=correlation_matrix, 
-        size=simulations
-    )
-    
-    # Calculate 95% VaR
-    portfolio_returns = np.dot(random_returns, weights)
-    var_95 = np.percentile(portfolio_returns, 5)
-    return var_95, portfolio_variance
-                </code></pre>
-                
-                <div class="fragment highlight-box">
-                    <strong>Key Innovation:</strong> Real-time risk assessment with 99.7% accuracy
-                </div>
-                
-                <aside class="notes">
-                    This code demonstrates our advanced risk assessment capabilities. Explain how we use Monte Carlo simulations and machine learning to calculate Value at Risk in real-time. This technology gives us a competitive advantage in risk management.
-                </aside>
-            </section>
+df = pd.read_csv("earnings.csv")
+summary = df.groupby("quarter").sum()
+print(summary)
+        </code></pre>
+        <aside class="notes">
+          Show an example of analysis workflow.
+        </aside>
+      </section>
 
-            <!-- Mathematical Formulas -->
-            <section>
-                <h2>Financial Performance Metrics</h2>
-                
-                <div class="fragment">
-                    <h3>Return on Equity (ROE)</h3>
-                    \[ROE = \frac{\text{Net Income}}{\text{Shareholders' Equity}} = \frac{\$485M}{\$2.67B} = 18.2\%\]
-                </div>
-                
-                <div class="fragment">
-                    <h3>Capital Adequacy Ratio</h3>
-                    \[CAR = \frac{\text{Tier 1 Capital} + \text{Tier 2 Capital}}{\text{Risk-Weighted Assets}} = \frac{\$1.8B}{\$12.4B} = 14.5\%\]
-                </div>
-                
-                <div class="fragment">
-                    <h3>Value at Risk (95% Confidence)</h3>
-                    \[VaR_{95\%} = \mu - 1.645 \times \sigma = -2.3\%\]
-                </div>
-                
-                <div class="fragment highlight-box">
-                    All ratios exceed regulatory requirements and industry benchmarks
-                </div>
-                
-                <aside class="notes">
-                    Walk through each formula step by step. Emphasize that our CAR ratio of 14.5% is well above the Basel III minimum requirement of 8%. The VaR calculation shows our risk exposure is well-controlled.
-                </aside>
-            </section>
+      <!-- Math Equations -->
+      <section>
+        <h2>Financial Ratios</h2>
+        <p>Return on Equity (ROE):</p>
+        <p>\[
+        ROE = \frac{Net\ Income}{Shareholder's\ Equity}
+        \]</p>
+        <p>Capital Adequacy Ratio (CAR):</p>
+        <p>\[
+        CAR = \frac{Tier\ 1 + Tier\ 2\ Capital}{Risk-Weighted\ Assets}
+        \]</p>
+        <aside class="notes">
+          Highlight the importance of ratios.
+        </aside>
+      </section>
 
-            <!-- Interactive Chart Placeholder -->
-            <section>
-                <h2>Revenue Trend Analysis</h2>
-                
-                <div class="chart-container">
-                    <canvas id="revenueChart" width="800" height="300"></canvas>
-                </div>
-                
-                <div class="fragment">
-                    <ul>
-                        <li><strong>Q1 2024:</strong> $2.1B (+12% YoY)</li>
-                        <li><strong>Q2 2024:</strong> $2.2B (+13% YoY)</li>
-                        <li><strong>Q3 2024:</strong> $2.3B (+14% YoY)</li>
-                        <li><strong>Q4 2024:</strong> $2.4B (+15% YoY)</li>
-                    </ul>
-                </div>
-                
-                <aside class="notes">
-                    This chart shows consistent quarterly growth throughout 2024. Point out the accelerating growth trend and explain how our digital transformation initiatives are driving this performance.
-                </aside>
-            </section>
+      <!-- Fragments Animation -->
+      <section>
+        <h2>Outlook</h2>
+        <ul>
+          <li class="fragment">Expansion into new markets</li>
+          <li class="fragment">Increased R&D investments</li>
+          <li class="fragment">Forecast: 15% growth next quarter</li>
+        </ul>
+        <aside class="notes">
+          Build anticipation for positive outlook.
+        </aside>
+      </section>
 
-            <!-- Technology Investments -->
-            <section>
-                <h2>Technology & Innovation Investments</h2>
-                
-                <div class="fragment">
-                    <h3>AI & Machine Learning Platform</h3>
-                    <pre><code class="javascript" data-line-numbers="1-5|7-12|14-18">
-// Real-time fraud detection system
-const fraudDetection = {
-    accuracy: 99.7,
-    avgProcessingTime: '< 50ms',
-    falsePositiveRate: 0.1
-};
+      <!-- Dedicated Contact Slide -->
+      <section>
+        <h2>Contact</h2>
+        <p><strong>23f3003731@ds.study.iitm.ac.in</strong></p>
+        <aside class="notes">
+          Provide contact details for follow-up.
+        </aside>
+      </section>
 
-// Customer analytics engine
-const customerInsights = await analyzeCustomerBehavior({
-    transactionHistory: userData.transactions,
-    demographicData: userData.profile,
-    riskProfile: userData.riskAssessment
-});
+      <!-- Q&A Slide -->
+      <section>
+        <h2>Q&amp;A</h2>
+        <p>Thank you for your attention.</p>
+        <p>Email: 23f3003731@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Invite questions and discussions.
+        </aside>
+      </section>
 
-// Automated compliance monitoring
-const complianceCheck = validateTransaction(
-    transaction, regulatoryFramework
-);
-                    </code></pre>
-                </div>
-                
-                <div class="fragment highlight-box">
-                    <strong>$150M invested</strong> in technology infrastructure in 2024
-                </div>
-                
-                <aside class="notes">
-                    Highlight our significant technology investments and how they're improving operational efficiency. The fraud detection system has saved us millions in potential losses, and the customer analytics platform is driving personalized service offerings.
-                </aside>
-            </section>
-
-            <!-- Strategic Outlook -->
-            <section data-background="#f8f9fa">
-                <h2>2025 Strategic Outlook</h2>
-                
-                <div class="fragment fade-right">
-                    <h3>🎯 Revenue Targets</h3>
-                    <p>Projected 12-15% growth driven by digital expansion</p>
-                </div>
-                
-                <div class="fragment fade-right">
-                    <h3>🚀 Innovation Pipeline</h3>
-                    <p>Launch of AI-powered personal banking assistant</p>
-                </div>
-                
-                <div class="fragment fade-right">
-                    <h3>🌍 Market Expansion</h3>
-                    <p>Entry into Southeast Asian markets</p>
-                </div>
-                
-                <div class="fragment fade-right">
-                    <h3>♻️ Sustainability Initiative</h3>
-                    <p>$500M commitment to green finance products</p>
-                </div>
-                
-                <aside class="notes">
-                    Outline our ambitious but achievable goals for 2025. Emphasize how our technology investments position us well for future growth. The sustainability initiative aligns with investor ESG priorities.
-                </aside>
-            </section>
-
-            <!-- Dedicated Email Slide -->
-            <section class="center">
-                <h2>Contact</h2>
-                <p><strong>23f3003731@ds.study.iitm.ac.in</strong></p>
-            </section>
-
-            <!-- Q&A Slide -->
-            <section class="center" data-background-gradient="linear-gradient(45deg, #2a5298, #1e3c72)">
-                <h1 style="color: white;">Questions & Discussion</h1>
-                <br>
-                <div style="color: #e3f2fd;">
-                    <p><strong>Contact Information:</strong></p>
-                    <p style="font-size: 1.1em;">📧 <strong>23f3003731@ds.study.iitm.ac.in</strong></p>
-                    <p>📊 Investor Relations Portal</p>
-                    <p>📈 Quarterly Reports Archive</p>
-                </div>
-                
-                <p style="color: #bbdefb; margin-top: 50px; font-size: 0.8em;">
-                    Thank you for your attention
-                </p>
-                
-                <aside class="notes">
-                    Open the floor for questions. Be prepared to discuss our digital transformation strategy, regulatory compliance, and competitive positioning. Have backup slides ready with detailed financial breakdowns if needed.
-                </aside>
-            </section>
-        </div>
     </div>
+  </div>
 
-    <!-- Contact info in corner -->
-    <div class="contact-info">
-        Presentation by: <strong>23f3003731@ds.study.iitm.ac.in</strong>
-    </div>
+  <footer>
+    Contact: 23f3003731@ds.study.iitm.ac.in
+  </footer>
 
-    <!-- RevealJS Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+  <!-- Reveal.js Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
 
-    <!-- Chart.js for simple chart -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script>
-        // Initialize RevealJS
-        Reveal.initialize({
-            hash: true,
-            controls: true,
-            progress: true,
-            center: false,
-            transition: 'slide',
-            
-            // Configure plugins
-            plugins: [ 
-                RevealMarkdown, 
-                RevealHighlight, 
-                RevealNotes,
-                RevealMath.KaTeX
-            ],
-            
-            // Math configuration
-            math: {
-                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-                config: 'TeX-AMS_HTML-full'
-            }
-        });
-
-        // Add simple chart when slide is reached
-        Reveal.addEventListener('slidechanged', function(event) {
-            if (event.currentSlide.querySelector('#revenueChart')) {
-                createRevenueChart();
-            }
-        });
-
-        function createRevenueChart() {
-            const ctx = document.getElementById('revenueChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
-                    datasets: [{
-                        label: 'Revenue (Billions $)',
-                        data: [2.1, 2.2, 2.3, 2.4],
-                        borderColor: '#2196f3',
-                        backgroundColor: 'rgba(33, 150, 243, 0.1)',
-                        tension: 0.3,
-                        fill: true
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Quarterly Revenue Growth'
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: false,
-                            min: 2.0,
-                            max: 2.5
-                        }
-                    }
-                }
-            });
-        }
-
-        // Initialize MathJax
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            }
-        };
-    </script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+    });
+  </script>
 </body>
 </html>
